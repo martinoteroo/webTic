@@ -22,7 +22,8 @@
                 <li><a class="nav" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <input type="text">
+        <input placeholder= 'Ingresar búsqueda'  type="text">
+        <button id ='input'>Enter</button>
 
     </header>
     <content>
@@ -63,4 +64,15 @@
             <h5 id="footer">···Página web TIC - Martín Otero···</h5>
         </div>
     </footer>
+    <script>
+
+        // Sencillo script para añadir un error en el cuadro de búsqueda
+        let input = document.getElementById('input');
+        input.addEventListener('click',alertaInput);
+
+        function alertaInput(){
+            alert('Aún no hay una versión de la web que soporte búsquedas, lo sentimos.')
+        }
+
+    </script>
 </body>
