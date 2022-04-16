@@ -8,6 +8,7 @@
   <title>Martin Otero- Inicio</title>
 </header>
 
+
 <body>
     <header id="main-header">
         <div id="logo">
@@ -23,7 +24,7 @@
             </ul>
         </nav>
         <input placeholder= 'Ingresar búsqueda'  type="text">
-        <button id ='input'>Enter</button>
+        <button id ='boton'>Enter</button>
 
     </header>
     <content>
@@ -55,8 +56,8 @@
 
 
             </div>
-            
-  			
+
+
         </article>
     </content>
     <footer>
@@ -67,12 +68,32 @@
     <script>
 
         // Sencillo script para añadir un error en el cuadro de búsqueda
-        let input = document.getElementById('input');
+        let input = document.getElementById('boton');
         input.addEventListener('click',alertaInput);
 
+
+
         function alertaInput(){
-            alert('Aún no hay una versión de la web que soporte búsquedas, lo sentimos.')
+          /*ALERTA.setAttribute('display','inherit');
+          console.log('holla');
+          console.log(ALERTA);*/
+          let ALERTA =document.createElement('div');
+          alerta.className='alerta';
+
+          let botonCerrar = document.createElement('button');
+          botonCerrar.className='close';
+
+          alerta.appendChild(botonCerrar);
+
+          let padre= document.getElementById('main-header');
+          let cabecera = document.getElementById('boton');
+
+          padre.insertAfter(alerta,cabecera);
+
+
         }
+
+
 
     </script>
 </body>

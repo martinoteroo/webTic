@@ -21,8 +21,11 @@
                 <li><a class="nav" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <input placeholder= 'Ingresar búsqueda'  type="text">
+        <button id ='input'>Enter</button>
 
     </header>
+    
 
     <content>
         <article>
@@ -33,7 +36,7 @@
 
   			<p>Después de más de 10 años de experiencia en el mundo del entrenamiento personal, mis habilidades y conocimientos sobre entrenamiento, alimentación, disciplina... son inmensas. Y lo mejor que puedo hacer con ellas ahora, es compartirlas con los demás para así ayudar a la mayor cantidad de gente posible a cumplir sus sueños. </p>
 
-  			<p>Si quieres cumplir esos objetivos que llevas tantos años intentando alcanzar, no dudes en dar el paso y contactar conmigo para comenzar juntos el camino hacia el exito!</p>      
+  			<p>Si quieres cumplir esos objetivos que llevas tantos años intentando alcanzar, no dudes en dar el paso y contactar conmigo para comenzar juntos el camino hacia el exito!</p>
 
             </div>
 
@@ -50,7 +53,18 @@
 
   			<p>Si quieres cumplir esos objetivos que llevas tantos años intentando alcanzar, no dudes en dar el paso y contactar conmigo para comenzar juntos el camino hacia el exito... (Leer más)</p>
 
-            
+
         </article>
     </content>
+    <script>
+
+        // Sencillo script para añadir un error en el cuadro de búsqueda
+        let input = document.getElementById('input');
+        input.addEventListener('click',alertaInput);
+
+        function alertaInput(){
+            alert('Aún no hay una versión de la web que soporte búsquedas, lo sentimos.')
+        }
+
+    </script>
 </body>
