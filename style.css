@@ -11,6 +11,7 @@ h1{
     padding: 0%;
     padding-bottom: 0%;
     margin: 0%;
+    
 }
 h2{
     padding-top: 0%;
@@ -77,8 +78,11 @@ body{
     font-size: 20px;
     margin-left: 0.5em;
 }
+
 .nav:hover{
     background: grey;
+    border:1.5px solid whitesmoke;
+    border-radius: 5px;
 
 }
 p{
