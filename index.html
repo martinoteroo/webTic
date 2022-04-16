@@ -26,7 +26,15 @@
         <input placeholder= 'Ingresar búsqueda'  type="text">
         <button id ='boton'>Enter</button>
 
+
+        <div class="alerta">
+            <h3><b>Alerta:</b> Aún no existe una versión de la web que permita búsquedas.
+            <button class="close">X</button>
+            </h3>
+        </div>
+
     </header>
+    
     <content>
         <article>
             <div class="articulo" id="a1">
@@ -66,33 +74,24 @@
         </div>
     </footer>
     <script>
+       //pequeño script para añadir una alerta o un error
+       let alert = document.getElementsByClassName('alerta')[0];
+       let botonEnter= document.getElementsByTagName('button')[0];
+       let botonCerrar = document.getElementsByTagName('button')[1];
 
-        // Sencillo script para añadir un error en el cuadro de búsqueda
-        let input = document.getElementById('boton');
-        input.addEventListener('click',alertaInput);
+       botonEnter.addEventListener('click',alerta);
+       botonCerrar.addEventListener('click',alerta);
 
-
-
-        function alertaInput(){
-          /*ALERTA.setAttribute('display','inherit');
-          console.log('holla');
-          console.log(ALERTA);*/
-          let ALERTA =document.createElement('div');
-          alerta.className='alerta';
-
-          let botonCerrar = document.createElement('button');
-          botonCerrar.className='close';
-
-          alerta.appendChild(botonCerrar);
-
-          let padre= document.getElementById('main-header');
-          let cabecera = document.getElementById('boton');
-
-          padre.insertAfter(alerta,cabecera);
+       function alerta(){
+           if(alert.style.display == 'none'){
+               alert.style.display = 'inherit';
+           }else{
+               alert.style.display='none';
+           }
+       }
 
 
-        }
-
+        
 
 
     </script>

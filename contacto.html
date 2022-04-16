@@ -23,6 +23,11 @@
         </nav>
         <input placeholder= 'Ingresar búsqueda'  type="text">
         <button id ='input'>Enter</button>
+        <div class="alerta">
+            <h3><b>Alerta:</b> Aún no existe una versión de la web que permita búsquedas.
+            <button class="close">X</button>
+            </h3>
+        </div>
 
     </header>
 
@@ -58,13 +63,20 @@
     </content>
     <script>
 
-        // Sencillo script para añadir un error en el cuadro de búsqueda
-        let input = document.getElementById('input');
-        input.addEventListener('click',alertaInput);
+        let alert = document.getElementsByClassName('alerta')[0];
+        let botonEnter= document.getElementsByTagName('button')[0];
+        let botonCerrar = document.getElementsByTagName('button')[1];
 
-        function alertaInput(){
-            alert('Aún no hay una versión de la web que soporte búsquedas, lo sentimos.')
-        }
+        botonEnter.addEventListener('click',alerta);
+        botonCerrar.addEventListener('click',alerta);
+
+        function alerta(){
+            if(alert.style.display == 'none'){
+                alert.style.display = 'inherit';
+                }else{
+                    alert.style.display='none';
+                }
+            }
 
     </script>
 </body>
