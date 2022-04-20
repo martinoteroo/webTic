@@ -37,6 +37,13 @@
     
     <content>
         <article>
+            <div class="articulo" id="imagen">
+                <h1>Te ayudamos a cumplir tus sueños</h1>
+                <h2>Alcanza tus objetivos</h2>
+               
+
+            </div>
+
             <div class="articulo" id="a1">
                 <h2>¿Quién soy?</h2>
             <img id="entrenador" src="https://koacenter.es/wp-content/uploads/2018/04/Entrenador-personal-barcelona.jpg">
@@ -80,19 +87,28 @@
        let botonCerrar = document.getElementsByTagName('button')[1];
 
        botonEnter.addEventListener('click',alerta);
-       botonCerrar.addEventListener('click',alerta);
+       botonCerrar.addEventListener('click',cerrar);
 
-       function alerta(){
-           if(alert.style.display == 'none'){
-               alert.style.display = 'inherit';
-           }else{
-               alert.style.display='none';
+
+       function cerrar(){
+        if(alert.style.display == 'inherit'){
+               alert.style.display = 'none';
            }
+        
        }
 
+       function alerta(){
+            alert.style.display = 'inherit';
+             console.error('Aun no existe una version de la web que soporte busquedas');
+             setTimeout(cerrar,3000);
+           
+       }
+
+       
 
         
 
 
     </script>
 </body>
+
