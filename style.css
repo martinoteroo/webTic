@@ -26,7 +26,7 @@ p{
 }
 
 body{
-	background: url(https://img.freepik.com/foto-gratis/textura-tela-blanca_1154-645.jpg?w=2000);
+	background: rwhite;
 	margin:0%;
 	padding: 0%;
     background-attachment: fixed;
@@ -47,10 +47,10 @@ body{
     padding-top:0% ;
     height: 80px;
     position: fixed;
-    background:url("https://th.bing.com/th/id/R.218fc4f0be3a8531aa19fde1118a48bb?rik=Ym61ghByV6saXg&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2011%2f02%2fblack-painted-brick-wall-texture.jpg&ehk=p5VwY0FBKeqFsDr5QW7d2wbHg1gheP7M7H%2fjUwVZJl8%3d&risl=&pid=ImgRaw&r=0");
+    background-color:rgb(0, 0, 0);
+    
 
-    /*
-    background: url("https://th.bing.com/th/id/R.218fc4f0be3a8531aa19fde1118a48bb?rik=Ym61ghByV6saXg&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2011%2f02%2fblack-painted-brick-wall-texture.jpg&ehk=p5VwY0FBKeqFsDr5QW7d2wbHg1gheP7M7H%2fjUwVZJl8%3d&risl=&pid=ImgRaw&r=0");
+    /*background: url("https://th.bing.com/th/id/R.218fc4f0be3a8531aa19fde1118a48bb?rik=Ym61ghByV6saXg&riu=http%3a%2f%2fwww.photos-public-domain.com%2fwp-content%2fuploads%2f2011%2f02%2fblack-painted-brick-wall-texture.jpg&ehk=p5VwY0FBKeqFsDr5QW7d2wbHg1gheP7M7H%2fjUwVZJl8%3d&risl=&pid=ImgRaw&r=0");
 */
 }
 
@@ -111,7 +111,7 @@ h2{
 }
 #a2{
     color:whitesmoke;
-    background-color: rgb(30,30,30);
+    background-color: black;
     font-weight:100;
     opacity: 80%;
 }
@@ -136,7 +136,7 @@ a{
 
 footer{
     height: 1.9em;
-    background-color: rgb(135,135,135);
+    background-color: rgb(59, 59, 59);
 }
 
 #footer{
@@ -177,4 +177,23 @@ input{
   width: 22px;
   text-align: center;
   height: 22px;
+}
+
+
+#imagen{
+    box-shadow: -3px 3px 0.5em;
+    text-align: center;
+    height: 220px;
+    background-image: url('https://remerasyestampados.com/wp-content/uploads/textura-negra-para-el-fondo_1160-614.jpg');
+}
+
+#imagen h1{
+    padding-top: 1.4em;
+    font-size: 3em;
+}
+
+#imagen h2{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
 }
